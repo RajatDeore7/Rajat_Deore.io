@@ -313,6 +313,10 @@ div.work_main {
     justify-content: space-between;
 }
 
+div.work_1 {
+    padding-top: 20px;
+}
+
 div.work_2 {
     padding-right: 70px;
 }
@@ -454,8 +458,6 @@ p.skills_header {
 
 div.main_container {
     display: flex;
-    /* justify-content: space-around; */
-    width: 100%;
 }
 
 div.container {
