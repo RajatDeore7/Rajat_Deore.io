@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Great+Vibes&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+html {
+    font-size: 62.5%;
+}
 
 div.pg1 {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
@@ -7,7 +11,7 @@ div.pg1 {
     animation: gradient 7s ease infinite;
     height: auto;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding-bottom: 80px;
+    padding: 0px 10px 80px 10px;
 }
 
 @keyframes gradient {
@@ -23,10 +27,6 @@ div.pg1 {
         background-position: 0% 50%;
     }
 }
-
-/* div.page {
-    padding: 60px 40px 20px 40px;
-} */
 
 /* width */
 ::-webkit-scrollbar {
@@ -45,10 +45,6 @@ div.pg1 {
     background: #1b262c;
 }
 
-/* div.pg1 {
-    background-color: rgb(27, 38, 44);
-} */
-
 div.nav_7 {
     display: flex;
     justify-content: space-between;
@@ -63,7 +59,7 @@ div.nav_70 {
 }
 
 p.nav_71 {
-    padding: 30px;
+    padding: 30px 40px 30px 20px;
     margin: 0;
 }
 
@@ -83,7 +79,7 @@ a.nav_72 {
     text-decoration: none;
     color: #3282b8;
     font-family: "Acme", cursive;
-    font-size: 1.25rem;
+    font-size: 2rem;
     display: inline-block;
     position: relative;
 }
@@ -127,17 +123,19 @@ img.my_img {
     border-radius: 5%;
     width: 270px;
     height: 340px;
+    box-shadow: 1px 1px 2px black, 0 0 25px rgb(58, 58, 65), 0 0 5px rgb(59, 59, 62);
 }
 
 h1.hello {
     font-family: "Acme", sans-serif;
     padding-top: 25px;
     color: #bbe1fa;
+    font-size: 4rem;
 }
 
 p.user {
-    font-family: "Great Vibes", cursive;
-    font-size: 25px;
+    font-family: "Poppins", cursive;
+    font-size: 2.5rem;
     font-weight: 500;
     color: #bbe1fa;
     margin-bottom: auto;
@@ -147,7 +145,7 @@ p.user {
 p.nick_name {
     color: #bbe1fa;
     font-family: "Acme", sans-serif;
-    font-size: 18px;
+    font-size: 1.8rem;
     margin: 0;
 }
 
@@ -178,73 +176,76 @@ i#icons:hover {
 }
 
 div.profile {
-    background-color: #1b262c;
+    background-color: #232429;
+    padding: 70px 60px 30px 60px;
+}
+
+div.prof_shadow {
+    box-shadow: 5px 8px 18px #6f6f6f;
 }
 
 div.profile_head {
-    padding-left: 10px;
+    text-align: center;
 }
 
 p.profile_header {
     font-family: "Acme", cursive;
-    font-size: 32px;
+    font-size: 3.5rem;
     color: #bbe1fa;
     margin: 0;
     padding: 10px 20px 0 10px;
-    border-bottom: 2px solid #bbe1fa;
-    width: 15%;
 }
 
 p.lead {
-    font-family: "Edu NSW ACT Foundation", cursive;
-    color: #3282b8;
-    font-size: 21px;
-    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    color: #f1f2f3;
+    font-size: 1.5rem;
+    font-weight: 900;
     padding: 10px 50px 0 50px;
 }
 
 div.profile_edu {
     padding-left: 10px;
+    text-align: center;
 }
 
 p.edu_header {
     font-family: "Acme", cursive;
-    font-size: 23px;
+    font-size: 3.5rem;
     color: #bbe1fa;
     margin: 0;
     padding: 10px 20px 0 10px;
-    border-bottom: 2px solid #bbe1fa;
-    width: 10%;
 }
 
 p.edu {
-    font-family: "Edu NSW ACT Foundation", cursive;
-    color: #3282b8;
-    font-size: 21px;
-    font-weight: 700;
-    padding: 0 50px;
+    font-family: "Poppins", cursive;
+    color: #f1f2f3;
+    font-size: 1.5em;
+    font-weight: 900;
+    padding: 10px 50px;
     margin-bottom: 0;
 }
 
 div.hobbies {
-    background-color: #1b262c;
-    padding-bottom: 15px;
-    padding-left: 10px;
+    background-color: #232429;
+    padding: 20px 60px 40px 60px;
+}
+
+div.hobb_shadow {
+    text-align: center;
+    box-shadow: 5px 8px 18px #6f6f6f;
 }
 
 p.hobb {
     margin-bottom: 0;
     font-family: "Acme", cursive;
-    font-size: 32px;
-    padding: 0 20px 5px 10px;
+    font-size: 3.5rem;
+    padding: 40px 20px 0px 10px;
     color: #bbe1fa;
-    border-bottom: 2px solid #bbe1fa;
-    width: 15%;
 }
 
 #carouselExampleIndicators {
-    border-top: 1px solid #bbe1fa;
-    border-bottom: 1px solid #bbe1fa;
+    padding: 20px 60px 40px 60px;
 }
 
 .carousel-item {
@@ -258,69 +259,82 @@ div.hobb_main {
 
 div.img_hobb1 {
     position: absolute;
-    z-index: -1;
+    z-index: 1;
     width: 100%;
 }
 
 img.img_hobb1 {
     width: 100%;
-    opacity: 0.9;
+    opacity: 0.6;
     height: 450px;
 }
 
 p.hobb_head {
-    font-family: "Edu NSW ACT Foundation", cursive;
-    font-size: 50px;
-    font-weight: 400;
-    color: #3282b8;
+    font-family: "Poppins", sans-serif;
+    font-size: 4.5rem;
+    font-weight: 1000;
+    color: #bbe1fa;
 }
 
 p.cont_hobb1 {
-    font-family: "Edu NSW ACT Foundation", cursive;
-    font-size: 30px;
-    font-weight: 200;
-    color: #3282b8;
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #f1f2f3;
 }
 
+
 div.tp {
-    background-color: #1b262c;
-    height: 740px;
+    background-color: #232429;
+    padding: 30px 60px 50px 60px;
+
+}
+
+div.tp_shadow {
+    box-shadow: 5px 8px 18px #6f6f6f;
+    padding-bottom: 45px;
 }
 
 div.training {
     padding-left: 10px;
+    text-align: center;
 }
 
 p.training_head {
     color: #bbe1fa;
     font-family: "Acme", cursive;
-    font-size: 32px;
+    font-size: 3.5rem;
     padding: 10px 20px 10px 10px;
     margin: 0;
-    border-bottom: 2px solid #bbe1fa;
-    width: 15%;
+}
+
+div.work_main {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.work_2 {
+    padding-right: 70px;
 }
 
 p.train_para {
-    font-family: "Edu NSW ACT Foundation", cursive;
-    color: #3282b8;
-    font-size: 21px;
+    font-family: "Poppins", cursive;
+    color: #f1f2f3;
+    font-size: 1.5rem;
     font-weight: 700;
     padding: 10px 50px 0 50px;
 }
 
 div.project {
-    padding-left: 10px;
+    text-align: center;
 }
 
 p.project_head {
     color: #bbe1fa;
     font-family: "Acme", cursive;
-    font-size: 23px;
+    font-size: 3.5rem;
     padding: 10px 20px 10px 10px;
     margin: 0;
-    border-bottom: 2px solid #bbe1fa;
-    width: 10%;
 }
 
 div.pro_main {
@@ -337,25 +351,28 @@ div.pro_main {
 
 div.card_body {
     margin: 0;
+    border-top: 1px solid #282d2f;
 }
 
 h5.card_title_front {
     font-family: "Acme", cursive;
-    font-size: 50px;
-    color: #3282b8;
+    font-size: 5rem;
+    color: #f1f2f3;
     padding-top: 30px;
 }
 
 h5.card_title_back {
     font-family: "Acme", cursive;
-    font-size: 24px;
-    color: #3282b8;
+    font-size: 2.5rem;
+    color: #f1f2f3;
     padding-top: 15px;
 }
 
 p.card_text {
-    font-family: "Edu NSW ACT Foundation", cursive;
-    color: #3282b8;
+    font-family: "Poppins", cursive;
+    color: #f1f2f3;
+    font-size: 1.5rem;
+    font-weight: 800;
 }
 
 #pro_font {
@@ -364,27 +381,32 @@ p.card_text {
 }
 
 div.pro_link_front {
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
 #card_link_front {
     font-family: "Acme", cursive;
-    font-size: 20px;
+    font-size: 2.5rem;
 }
 
 #card_link_back {
     font-family: "Acme", cursive;
+    font-size: 1.2rem;
+    color: #f1f2f3;
 }
 
 #card_footer {
-    font-family: "Edu NSW ACT Foundation", cursive;
+    font-family: "Poppins", cursive;
     padding: 0;
+    font-size: 2rem;
+    color: #f1f2f3;
+    font-weight: 700;
     margin-top: 13px;
     border-top: 1px solid #282d2f;
 }
 
 .card_inner {
-    background-color: #f4eeff;
+    background-color: #3282b8;
     position: relative;
     width: 100%;
     height: 100%;
