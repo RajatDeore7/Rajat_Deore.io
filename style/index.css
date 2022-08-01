@@ -30,19 +30,29 @@ div.pg1 {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 10px;
-    background-color: grey;
+    width: 7px;
+    background-color: #7F8487;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: #3282b8;
+    background: #413F42;
     border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #1b262c;
+}
+
+div.top_progress_bar {
+    position: fixed;
+    top: 0%;
+    left: 0;
+    height: 5px;
+    background: linear-gradient(to right, #000000, #52057b, #892cdc, #bc6ff1);
+    width: 0%;
+    z-index: 1;
 }
 
 div.nav_7 {
@@ -149,9 +159,22 @@ p.nick_name {
     margin: 0;
 }
 
-a.resume_link1 {
+div.resume_button {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+}
+
+button.resume_btn {
+    background-color: #f4eeff;
+    border: 3px solid #bbe1fa;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 0 #3282b8, 0 5px 20px 0 #1b262c;
+}
+
+a.resume_link {
     font-family: "Acme", cursive;
-    font-size: 20px;
+    font-size: 3rem;
     text-decoration: none;
 }
 
@@ -217,7 +240,39 @@ p.edu_header {
     padding: 10px 20px 0 10px;
 }
 
-p.edu {
+div.edu_main {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.edu_img1 {
+    position: absolute;
+    animation: fly 5s ease-in infinite;
+    padding-left: 40px;
+}
+
+@keyframes fly {
+    to {
+        padding-top: 0px;
+    }
+
+    from {
+        padding-top: 120px;
+    }
+}
+
+div.edu_img2 {
+    position: relative;
+    padding-top: 120px;
+    padding-left: 40px;
+}
+
+div.edu_main_2 {
+    padding-right: 20px;
+    padding-top: 20px
+}
+
+div#edu {
     font-family: "Poppins", cursive;
     color: #f1f2f3;
     font-size: 1.5em;
@@ -321,6 +376,26 @@ div.work_2 {
     padding-right: 70px;
 }
 
+div.ani_img1 {
+    position: absolute;
+}
+
+div.ani_img2 {
+    position: relative;
+    animation: glide 2.5s alternate ease-in infinite;
+}
+
+@keyframes glide {
+    from {
+        top: 10px;
+    }
+
+    to {
+        top: 0px;
+    }
+
+}
+
 p.train_para {
     font-family: "Poppins", cursive;
     color: #f1f2f3;
@@ -400,17 +475,20 @@ div.pro_link_front {
 }
 
 #card_footer {
+    margin-top: 13px;
+    border-top: 1px solid #f1f2f3;
+}
+
+p.card_footer_time {
+    color: #5c5a5e;
     font-family: "Poppins", cursive;
     padding: 0;
     font-size: 2rem;
-    color: #f1f2f3;
     font-weight: 700;
-    margin-top: 13px;
-    border-top: 1px solid #282d2f;
 }
 
 .card_inner {
-    background-color: #3282b8;
+    background-color: #232429;
     position: relative;
     width: 100%;
     height: 100%;
@@ -441,19 +519,18 @@ div.pro_link_front {
 div.skills {
     background-color: #1b262c;
     width: 100%;
-    padding-top: 40px;
+    padding: 30px 60px 50px 60px;
+}
+
+div.skill_shadow {
+    box-shadow: 5px 8px 18px #6f6f6f;
 }
 
 div.skills_head {
     font-family: "Acme", cursive;
     color: #bbe1fa;
-    padding-left: 47%;
+    text-align: center;
     font-size: 32px;
-}
-
-p.skills_header {
-    border-bottom: 2px solid #bbe1fa;
-    width: 13%;
 }
 
 div.main_container {
@@ -462,7 +539,7 @@ div.main_container {
 
 div.container {
     display: flex;
-    padding-bottom: 25px;
+    padding-bottom: 20px;
     width: 100%;
 }
 
@@ -480,81 +557,91 @@ div.container:nth-child(1) {
 
 div.skills_name {
     font-family: "Acme", cursive;
-    color: #bbe1fa;
+    color: #f1f2f3;
+    font-size: 1.5rem;
     padding-right: 10px;
 }
 
 div.progress {
     background-color: #bbe1fa;
     width: 80%;
-    height: 20px;
     border-radius: 50px;
 }
 
 div.progress_bar {
     width: 0%;
     opacity: 0;
-    background-color: #23a6d5;
-    height: 20px;
+    background: linear-gradient(to right, #000000, #150050, #3F0071, #610094);
     border-radius: 50px;
     transition: all 2s;
 }
 
 div.skills_percent {
     text-align: center;
-    font-family: "Edu NSW ACT Foundation", cursive;
+    font-family: "Poppins", sans-serif;
+    color: #f1f2f3;
+    font-size: 0.9rem;
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
 }
 
 div.contact {
-    background-color: #1b262c;
+    background-color: #232429;
     width: 100%;
-    height: 250px;
     text-align: center;
-    padding-top: 10px;
+    padding: 30px 60px 100px 60px;
+}
+
+div.cont_shadow {
+    box-shadow: 5px 8px 18px #6f6f6f;
+    padding: 20px 0;
 }
 
 div.contact_me {
-    padding-left: 45%;
+    text-align: center;
 }
 
 p.contact_head {
     font-family: "Acme", cursive;
     color: #bbe1fa;
-    border-bottom: 2px solid #bbe1fa;
-    font-size: 32px;
-    width: 20%;
+    font-size: 3.5rem;
 }
 
 div.address {
-    font-family: "Edu NSW ACT Foundation", cursive;
-    color: #3282b8;
-    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #f1f2f3;
+    font-size: 1.5rem;
+    font-weight: 800;
     padding-bottom: 10px;
 }
 
 div.gmail {
-    font-family: "Edu NSW ACT Foundation", cursive;
-    color: #3282b8;
-    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #f1f2f3;
+    font-size: 1.5rem;
+    font-weight: 800;
     padding-bottom: 10px;
 }
 
 div.phone {
-    font-family: "Edu NSW ACT Foundation", cursive;
-    color: #3282b8;
-    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #f1f2f3;
+    font-size: 1.5rem;
+    font-weight: 800;
     padding-bottom: 10px;
 }
 
 div.linked_in {
-    font-family: "Edu NSW ACT Foundation", cursive;
-    color: #3282b8;
-    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    color: #f1f2f3;
+    font-size: 1.5rem;
+    font-weight: 800;
 }
 
 .linked_in .fa-brands,
 .fa-solid {
-    color: #fff;
+    color: #f1f2f3;
     padding-right: 5px;
 }
 
@@ -566,60 +653,91 @@ div.linked_in {
 
 a.linked_link {
     text-decoration: none;
-    color: #3282b8;
+    color: #5800FF;
 }
 
-div.download_resume {
-    background-color: #1b262c;
-    width: 100%;
-    height: 200px;
-    text-align: -webkit-center;
+div.footer {
+    background-color: #232429;
+    border-top: 1px solid #000000;
+    padding-top: 20px;
 }
 
-div.resume {
-    padding-left: 0px;
-}
-
-p.resume_head {
-    font-family: "Acme", cursive;
-    color: #bbe1fa;
-    font-size: 32px;
-    margin-bottom: 0;
-    border-bottom: 2px solid #bbe1fa;
-    width: 12%;
-    padding-left: 0px;
-}
-
-div.resume_button {
+div.foot_main {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-div.resume_button:nth-child(2) {
+div.foot_name {
+    padding-left: 60px;
+}
+
+p.foot_name1 {
+    font-size: 2.5rem;
+    font-family: "Acme", sans-serif;
+    font-weight: 700;
+    color: #f1f2f3;
+    margin: 0;
+}
+
+p.foot_nickname {
+    font-size: 1.5rem;
+    font-family: "Acme", sans-serif;
+    font-weight: 500;
+    color: #7F8487;
+}
+
+div.foot_nav {
     display: flex;
-    justify-content: center;
-    padding-top: 40px;
+    padding-left: 60px;
 }
 
-button.resume_btn {
-    background-color: #f4eeff;
-    border: 3px solid #bbe1fa;
-    border-radius: 5px;
-    box-shadow: 0 5px 10px 0 #3282b8, 0 5px 20px 0 #1b262c;
+p.foot_nav_71 {
+    border-right: 1px solid #7F8487;
 }
 
-a.resume_link {
-    font-family: "Acme", cursive;
-    font-size: 30px;
+a.foot_nav_72 {
     text-decoration: none;
+    color: #f1f2f3;
+    font-size: 1.5rem;
+    padding: 10px 20px;
 }
 
-div.top_progress_bar {
-    position: fixed;
-    top: 0%;
-    left: 0;
-    height: 5px;
-    background: linear-gradient(to right, #000000, #52057b, #892cdc, #bc6ff1);
-    width: 0%;
-    z-index: 1;
+div.foot_icon {
+    display: flex;
+    padding-right: 60px;
+}
+
+i#foot_icons {
+    color: #f1f2f3;
+    padding-right: 10px;
+    font-size: 2.5rem;
+}
+
+i#foot_icons_last {
+    color: #f1f2f3;
+    font-size: 2.5rem;
+}
+
+i#foot_icons:hover {
+    color: #5800FF;
+}
+
+i#foot_icons_last:hover {
+    color: #5800FF;
+}
+
+div.foot_copyright {
+    text-align: center;
+}
+
+div.foot_copyright p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: #f1f2f3;
+    margin: 0;
+    padding: 30px 0 5px 0;
+}
+
+div.foot_copyright p i {
+    padding: 0 4px 0 0;
 }
