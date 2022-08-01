@@ -10,8 +10,8 @@ div.pg1 {
     background-size: 400% 400%;
     animation: gradient 7s ease infinite;
     height: auto;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 0px 10px 80px 10px;
+    box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
+    padding: 0px 1rem 8rem 1rem;
 }
 
 @keyframes gradient {
@@ -30,14 +30,14 @@ div.pg1 {
 
 /* width */
 ::-webkit-scrollbar {
-    width: 7px;
+    width: 0.7rem;
     background-color: #7F8487;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
     background: #413F42;
-    border-radius: 10px;
+    border-radius: 1rem;
 }
 
 /* Handle on hover */
@@ -49,7 +49,7 @@ div.top_progress_bar {
     position: fixed;
     top: 0%;
     left: 0;
-    height: 5px;
+    height: 0.5rem;
     background: linear-gradient(to right, #000000, #52057b, #892cdc, #bc6ff1);
     width: 0%;
     z-index: 1;
@@ -69,20 +69,20 @@ div.nav_70 {
 }
 
 p.nav_71 {
-    padding: 30px 40px 30px 20px;
+    padding: 3rem 4rem 3rem 2rem;
     margin: 0;
 }
 
 div.logo {
-    padding-top: 20px;
-    padding-left: 20px;
+    padding-top: 2rem;
+    padding-left: 2rem;
 }
 
 img.logo {
-    border: 1px solid #000;
+    border: 0.1rem solid #000;
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 7rem;
+    height: 7rem;
 }
 
 a.nav_72 {
@@ -99,7 +99,7 @@ a.nav_72:after {
     position: absolute;
     width: 100%;
     transform: scaleX(0);
-    height: 2px;
+    height: 0.2rem;
     bottom: 0;
     left: 0;
     background-color: #bbe1fa;
@@ -117,8 +117,8 @@ a.nav_72:hover:after {
 }
 
 div.header {
-    padding-top: 167px;
-    padding-bottom: 30px;
+    padding-top: 16rem;
+    padding-bottom: 3rem;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -129,16 +129,16 @@ div.content {
 }
 
 img.my_img {
-    border: 1px solid #3282b8;
+    border: 0.1rem solid #3282b8;
     border-radius: 5%;
-    width: 270px;
-    height: 340px;
-    box-shadow: 1px 1px 2px black, 0 0 25px rgb(58, 58, 65), 0 0 5px rgb(59, 59, 62);
+    width: 27rem;
+    height: 34rem;
+    box-shadow: 0.1rem 0.1rem 0.2rem black, 0 0 2.5rem rgb(58, 58, 65), 0 0 0.5rem rgb(59, 59, 62);
 }
 
 h1.hello {
     font-family: "Acme", sans-serif;
-    padding-top: 25px;
+    padding-top: 2.5rem;
     color: #bbe1fa;
     font-size: 4rem;
 }
@@ -149,7 +149,7 @@ p.user {
     font-weight: 500;
     color: #bbe1fa;
     margin-bottom: auto;
-    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    text-shadow: 0.1rem 0.1rem 0.2rem black, 0 0 2.5rem blue, 0 0 0.5rem darkblue;
 }
 
 p.nick_name {
@@ -162,14 +162,14 @@ p.nick_name {
 div.resume_button {
     display: flex;
     justify-content: center;
-    padding-top: 10px;
+    padding-top: 1rem;
 }
 
 button.resume_btn {
     background-color: #f4eeff;
-    border: 3px solid #bbe1fa;
-    border-radius: 5px;
-    box-shadow: 0 5px 10px 0 #3282b8, 0 5px 20px 0 #1b262c;
+    border: 0.3rem solid #bbe1fa;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.5rem 1rem 0 #3282b8, 0 0.5rem 2rem 0 #1b262c;
 }
 
 a.resume_link {
@@ -181,17 +181,17 @@ a.resume_link {
 div.ico {
     display: flex;
     justify-content: center;
-    padding-bottom: 5px;
+    padding-bottom: 0.5rem;
 }
 
 #ico_7 {
-    padding: 10px;
+    padding: 1rem;
 }
 
 i#icons {
-    font-size: 27px;
+    font-size: 2.7rem;
     color: #fff;
-    padding-top: 5px;
+    padding-top: 0.5rem;
 }
 
 i#icons:hover {
@@ -200,11 +200,11 @@ i#icons:hover {
 
 div.profile {
     background-color: #232429;
-    padding: 70px 60px 30px 60px;
+    padding: 7rem 6rem 3rem 6rem;
 }
 
 div.prof_shadow {
-    box-shadow: 5px 8px 18px #6f6f6f;
+    box-shadow: 0.5rem 0.8rem 1.8rem #6f6f6f;
 }
 
 div.profile_head {
@@ -216,7 +216,7 @@ p.profile_header {
     font-size: 3.5rem;
     color: #bbe1fa;
     margin: 0;
-    padding: 10px 20px 0 10px;
+    padding: 1rem 2rem 0 1rem;
 }
 
 p.lead {
@@ -224,11 +224,11 @@ p.lead {
     color: #f1f2f3;
     font-size: 1.5rem;
     font-weight: 900;
-    padding: 10px 50px 0 50px;
+    padding: 1rem 5rem 0 5rem;
 }
 
 div.profile_edu {
-    padding-left: 10px;
+    padding-left: 1rem;
     text-align: center;
 }
 
@@ -237,7 +237,7 @@ p.edu_header {
     font-size: 3.5rem;
     color: #bbe1fa;
     margin: 0;
-    padding: 10px 20px 0 10px;
+    padding: 1rem 2rem 0 1rem;
 }
 
 div.edu_main {
@@ -248,68 +248,68 @@ div.edu_main {
 div.edu_img1 {
     position: absolute;
     animation: fly 5s ease-in infinite;
-    padding-left: 40px;
+    padding-left: 4rem;
 }
 
 @keyframes fly {
     to {
-        padding-top: 0px;
+        padding-top: 0rem;
     }
 
     from {
-        padding-top: 120px;
+        padding-top: 12rem;
     }
 }
 
 div.edu_img2 {
     position: relative;
-    padding-top: 120px;
-    padding-left: 40px;
+    padding-top: 12rem;
+    padding-left: 4rem;
 }
 
 div.edu_main_2 {
-    padding-right: 20px;
-    padding-top: 20px
+    padding-right: 2rem;
+    padding-top: 2rem;
 }
 
 div#edu {
     font-family: "Poppins", cursive;
     color: #f1f2f3;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 900;
-    padding: 10px 50px;
+    padding: 1rem 5rem;
     margin-bottom: 0;
 }
 
 div.hobbies {
     background-color: #232429;
-    padding: 20px 60px 40px 60px;
+    padding: 2rem 6rem 4rem 6rem;
 }
 
 div.hobb_shadow {
     text-align: center;
-    box-shadow: 5px 8px 18px #6f6f6f;
+    box-shadow: 0.5rem 0.8rem 1.8rem #6f6f6f;
 }
 
 p.hobb {
     margin-bottom: 0;
     font-family: "Acme", cursive;
     font-size: 3.5rem;
-    padding: 40px 20px 0px 10px;
+    padding: 4rem 2rem 0rem 1rem;
     color: #bbe1fa;
 }
 
 #carouselExampleIndicators {
-    padding: 20px 60px 40px 60px;
+    padding: 2rem 6rem 4rem 6rem;
 }
 
 .carousel-item {
-    height: 400px;
+    height: 40rem;
 }
 
 div.hobb_main {
     text-align: center;
-    padding: 40px;
+    padding: 4rem;
 }
 
 div.img_hobb1 {
@@ -321,7 +321,7 @@ div.img_hobb1 {
 img.img_hobb1 {
     width: 100%;
     opacity: 0.6;
-    height: 450px;
+    height: 45rem;
 }
 
 p.hobb_head {
@@ -341,17 +341,17 @@ p.cont_hobb1 {
 
 div.tp {
     background-color: #232429;
-    padding: 30px 60px 50px 60px;
+    padding: 3rem 6rem 5rem 6rem;
 
 }
 
 div.tp_shadow {
-    box-shadow: 5px 8px 18px #6f6f6f;
-    padding-bottom: 45px;
+    box-shadow: 0.5rem 0.8rem 1.8rem #6f6f6f;
+    padding-bottom: 4.5rem;
 }
 
 div.training {
-    padding-left: 10px;
+    padding-left: 1rem;
     text-align: center;
 }
 
@@ -359,7 +359,7 @@ p.training_head {
     color: #bbe1fa;
     font-family: "Acme", cursive;
     font-size: 3.5rem;
-    padding: 10px 20px 10px 10px;
+    padding: 1rem 2rem 1rem 1rem;
     margin: 0;
 }
 
@@ -369,11 +369,11 @@ div.work_main {
 }
 
 div.work_1 {
-    padding-top: 20px;
+    padding-top: 2rem;
 }
 
 div.work_2 {
-    padding-right: 70px;
+    padding-right: 7rem;
 }
 
 div.ani_img1 {
@@ -387,7 +387,7 @@ div.ani_img2 {
 
 @keyframes glide {
     from {
-        top: 10px;
+        top: 1rem;
     }
 
     to {
@@ -401,7 +401,7 @@ p.train_para {
     color: #f1f2f3;
     font-size: 1.5rem;
     font-weight: 700;
-    padding: 10px 50px 0 50px;
+    padding: 1rem 5rem 0 5rem;
 }
 
 div.project {
@@ -412,39 +412,39 @@ p.project_head {
     color: #bbe1fa;
     font-family: "Acme", cursive;
     font-size: 3.5rem;
-    padding: 10px 20px 10px 10px;
+    padding: 1rem 2rem 1rem 1rem;
     margin: 0;
 }
 
 div.pro_main {
     display: flex;
     justify-content: space-around;
-    padding-top: 20px;
+    padding-top: 2rem;
 }
 
 .card_main {
-    width: 300px;
-    height: 290px;
-    padding: 20px 0 0 0;
+    width: 30rem;
+    height: 29rem;
+    padding: 2rem 0 0 0;
 }
 
 div.card_body {
     margin: 0;
-    border-top: 1px solid #282d2f;
+    border-top: 0.1rem solid #282d2f;
 }
 
 h5.card_title_front {
     font-family: "Acme", cursive;
     font-size: 5rem;
     color: #f1f2f3;
-    padding-top: 30px;
+    padding-top: 3rem;
 }
 
 h5.card_title_back {
     font-family: "Acme", cursive;
     font-size: 2.5rem;
     color: #f1f2f3;
-    padding-top: 15px;
+    padding-top: 1.5rem;
 }
 
 p.card_text {
@@ -455,12 +455,12 @@ p.card_text {
 }
 
 #pro_font {
-    font-size: 60px;
-    padding-top: 10px;
+    font-size: 6rem;
+    padding-top: 1rem;
 }
 
 div.pro_link_front {
-    padding-top: 40px;
+    padding-top: 4rem;
 }
 
 #card_link_front {
@@ -475,8 +475,8 @@ div.pro_link_front {
 }
 
 #card_footer {
-    margin-top: 13px;
-    border-top: 1px solid #f1f2f3;
+    margin-top: 1.3rem;
+    border-top: 0.1rem solid #f1f2f3;
 }
 
 p.card_footer_time {
@@ -495,8 +495,8 @@ p.card_footer_time {
     text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    border-radius: 14px;
+    box-shadow: 0 4rem 8rem 0 rgba(0, 0, 0, 0.2);
+    border-radius: 1.4rem;
 }
 
 .card_main:hover .card_inner {
@@ -519,18 +519,18 @@ p.card_footer_time {
 div.skills {
     background-color: #1b262c;
     width: 100%;
-    padding: 30px 60px 50px 60px;
+    padding: 3rem 6rem 5rem 6rem;
 }
 
 div.skill_shadow {
-    box-shadow: 5px 8px 18px #6f6f6f;
+    box-shadow: 0.5rem 0.8rem 1.8rem #6f6f6f;
 }
 
 div.skills_head {
     font-family: "Acme", cursive;
     color: #bbe1fa;
     text-align: center;
-    font-size: 32px;
+    font-size: 3.2rem;
 }
 
 div.main_container {
@@ -539,7 +539,7 @@ div.main_container {
 
 div.container {
     display: flex;
-    padding-bottom: 20px;
+    padding-bottom: 2rem;
     width: 100%;
 }
 
@@ -552,27 +552,27 @@ div.container_2 {
 }
 
 div.container:nth-child(1) {
-    padding-top: 20px;
+    padding-top: 2rem;
 }
 
 div.skills_name {
     font-family: "Acme", cursive;
     color: #f1f2f3;
     font-size: 1.5rem;
-    padding-right: 10px;
+    padding-right: 1rem;
 }
 
 div.progress {
     background-color: #bbe1fa;
     width: 80%;
-    border-radius: 50px;
+    border-radius: 5rem;
 }
 
 div.progress_bar {
     width: 0%;
     opacity: 0;
     background: linear-gradient(to right, #000000, #150050, #3F0071, #610094);
-    border-radius: 50px;
+    border-radius: 5rem;
     transition: all 2s;
 }
 
@@ -590,11 +590,11 @@ div.contact {
     background-color: #232429;
     width: 100%;
     text-align: center;
-    padding: 30px 60px 100px 60px;
+    padding: 3rem 6rem 10rem 6rem;
 }
 
 div.cont_shadow {
-    box-shadow: 5px 8px 18px #6f6f6f;
+    box-shadow: 0.5rem 0.8rem 1.8rem #6f6f6f;
     padding: 20px 0;
 }
 
@@ -613,7 +613,7 @@ div.address {
     color: #f1f2f3;
     font-size: 1.5rem;
     font-weight: 800;
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
 }
 
 div.gmail {
@@ -621,7 +621,7 @@ div.gmail {
     color: #f1f2f3;
     font-size: 1.5rem;
     font-weight: 800;
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
 }
 
 div.phone {
@@ -629,7 +629,7 @@ div.phone {
     color: #f1f2f3;
     font-size: 1.5rem;
     font-weight: 800;
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
 }
 
 div.linked_in {
@@ -642,13 +642,13 @@ div.linked_in {
 .linked_in .fa-brands,
 .fa-solid {
     color: #f1f2f3;
-    padding-right: 5px;
+    padding-right: 0.5rem;
 }
 
 .linked_in .fa-brands:hover,
 .fa-solid:hover {
     color: #000;
-    padding-right: 5px;
+    padding-right: 0.5rem;
 }
 
 a.linked_link {
@@ -658,8 +658,8 @@ a.linked_link {
 
 div.footer {
     background-color: #232429;
-    border-top: 1px solid #000000;
-    padding-top: 20px;
+    border-top: 0.1rem solid #000000;
+    padding-top: 2rem;
 }
 
 div.foot_main {
@@ -668,7 +668,7 @@ div.foot_main {
 }
 
 div.foot_name {
-    padding-left: 60px;
+    padding-left: 6rem;
 }
 
 p.foot_name1 {
@@ -688,28 +688,28 @@ p.foot_nickname {
 
 div.foot_nav {
     display: flex;
-    padding-left: 60px;
+    padding-left: 6rem;
 }
 
 p.foot_nav_71 {
-    border-right: 1px solid #7F8487;
+    border-right: 0.1rem solid #7F8487;
 }
 
 a.foot_nav_72 {
     text-decoration: none;
     color: #f1f2f3;
     font-size: 1.5rem;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
 }
 
 div.foot_icon {
     display: flex;
-    padding-right: 60px;
+    padding-right: 6rem;
 }
 
 i#foot_icons {
     color: #f1f2f3;
-    padding-right: 10px;
+    padding-right: 1rem;
     font-size: 2.5rem;
 }
 
@@ -735,9 +735,9 @@ div.foot_copyright p {
     font-size: 1rem;
     color: #f1f2f3;
     margin: 0;
-    padding: 30px 0 5px 0;
+    padding: 3rem 0 0.5rem 0;
 }
 
 div.foot_copyright p i {
-    padding: 0 4px 0 0;
+    padding: 0 0.4rem 0 0;
 }
