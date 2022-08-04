@@ -40,7 +40,8 @@ const onscroll = () => {
     (scrollDist /
       (body.getBoundingClientRect().height -
         document.documentElement.clientHeight)) *
-    100;
+      100 +
+    1;
   let value = Math.floor(progresswidth);
   progressBartop.style.width = value + "%";
 };

@@ -5,27 +5,17 @@ html {
     font-size: 62.5%;
 }
 
-div.pg1 {
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 7s ease infinite;
-    height: auto;
-    box-shadow: 0 0.8rem 1.6rem 0 rgba(0, 0, 0, 0.2), 0 0.6rem 2rem 0 rgba(0, 0, 0, 0.19);
-    padding: 0px 1rem 8rem 1rem;
+@media screen and (max-width:480px) {
+    html {
+        font-size: 50%;
+        width: 175%;
+    }
+
 }
 
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-
-    50% {
-        background-position: 100% 50%;
-    }
-
-    100% {
-        background-position: 0% 50%;
-    }
+div.pg1 {
+    background-color: #232429;
+    padding: 0rem 1rem 8rem 1rem;
 }
 
 /* width */
@@ -56,11 +46,9 @@ div.top_progress_bar {
 }
 
 div.nav_7 {
+    background-color: #232429;
     display: flex;
     justify-content: space-between;
-    position: fixed;
-    top: 0;
-    width: 100%;
     z-index: 1;
 }
 
@@ -247,8 +235,13 @@ div.edu_main {
 
 div.edu_img1 {
     position: absolute;
-    animation: fly 5s ease-in infinite;
     padding-left: 4rem;
+    z-index: 1;
+    padding-top: 12rem;
+}
+
+div.edu_img1:hover {
+    animation: fly 4s ease-in infinite;
 }
 
 @keyframes fly {
@@ -341,7 +334,7 @@ p.cont_hobb1 {
 
 div.tp {
     background-color: #232429;
-    padding: 3rem 6rem 5rem 6rem;
+    padding: 7rem 6rem 5rem 6rem;
 
 }
 
@@ -657,7 +650,7 @@ a.linked_link {
 }
 
 div.footer {
-    background-color: #232429;
+    background-color: #000000;
     border-top: 0.1rem solid #000000;
     padding-top: 2rem;
 }
