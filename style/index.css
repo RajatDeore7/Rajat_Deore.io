@@ -50,6 +50,10 @@ div.nav_7 {
     display: flex;
     justify-content: space-between;
     z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 div.nav_70 {
@@ -133,18 +137,112 @@ h1.hello {
 
 p.user {
     font-family: "Poppins", cursive;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #bbe1fa;
     margin-bottom: auto;
+    padding-top: 3rem;
     text-shadow: 0.1rem 0.1rem 0.2rem black, 0 0 2.5rem blue, 0 0 0.5rem darkblue;
 }
 
-p.nick_name {
+div.nick {
     color: #bbe1fa;
     font-family: "Acme", sans-serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
     margin: 0;
+    opacity: 0;
+    position: absolute;
+    width: 35rem;
+}
+
+div.name_1 {
+    animation: ani_1 15s infinite;
+}
+
+div.name_2 {
+    animation: ani_2 15s infinite;
+}
+
+div.name_3 {
+    animation: ani_3 15s infinite;
+}
+
+div.name_4 {
+    animation: ani_4 15s infinite;
+}
+
+div.name_5 {
+    animation: ani_5 15s infinite;
+}
+
+@keyframes ani_1 {
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    20% {
+        opacity: 0;
+    }
+}
+
+@keyframes ani_2 {
+    20% {
+        opacity: 0;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    40% {
+        opacity: 0;
+    }
+}
+
+@keyframes ani_3 {
+    40% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 0;
+    }
+}
+
+@keyframes ani_4 {
+    60% {
+        opacity: 0;
+    }
+
+    70% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 0;
+    }
+}
+
+@keyframes ani_5 {
+    80% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 div.resume_button {
